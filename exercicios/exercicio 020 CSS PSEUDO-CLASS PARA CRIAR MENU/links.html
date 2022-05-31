@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, /**/sans-serif;
+        }
+        a {
+            color: red;     /**/
+            text-decoration: none;    /*tirar sublinhado dos links*/
+            font-weight: bold;     /*os links fica em negrito*/
+        }
+
+        a:visited {  /*quando for visitado fica vermelho*/
+            color: darkred;   
+        }
+        a:hover {
+            color: black;  /*quando passa mouse por cima fica preto*/
+            text-decoration: underline;  /*quando passa mouse por cima fica sublinhado*/
+        }
+        a:active {
+            color: yellow;  /*quando e clicado ele pisca amarelo*/
+        }
+        .especial {
+            background-color: aqua;
+        }
+        a::before {  /*antes do a quero a seta*/
+            content: '⇒';
+        }
+
+        a::after {
+            content: '⇐';  /*depois do a quero outra seta*/
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositorio GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://cursoemvideo.com">Site do Curso</a></li>
+    </ul>
+</body>
+</html>

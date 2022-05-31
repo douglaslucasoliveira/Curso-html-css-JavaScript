@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(196, 247, 184);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: rgb(5, 124, 5);
+}
+h1#principal {
+    text-align: center;
+    color: black;
+    background-color: aliceblue;
+}
+
+h2{
+    color: rgb(33, 53, 4);
+}
+
+.basico{
+    color: rgb(70, 146, 70);
+    font-weight: bolder;
+
+}
+
+.intermediario{
+    color: rgb(207, 189, 25);
+
+}
+
+.avançado{
+    color: rgb(228, 17, 10);
+
+
+}
+
+.destaque {
+    background-color: gold;
+}
+/* em  HTML e id    = em CSS e # 
+      ex: id copo   = #copo{}
+   em  HTML e class = em CSS e ponto .
+     ex: class copo = .copo
+     
+     mas o id pode ser usado apenas uma vez o class varias vezes
+*/

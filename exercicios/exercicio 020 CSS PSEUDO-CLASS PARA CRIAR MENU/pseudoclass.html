@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-class</title>
+    <style>
+        div{
+            display: inline-flex;    /*quero um quadrado ao lado do outro*/
+            background-color: aqua;  /*area dessa div e azul*/
+            border: 1px solid black;   /*uma borda em volta dessa div*/
+            text-align: center; /* texto alinhado no centro*/
+            height: 200px;  /*altura dessa area div*/
+            width: 200px;  /*largura dessa area div*/
+        }
+        div > p {
+            display: none;  /*quero que esse paragrafo suma da tela*/
+        }
+        div:hover > p {
+            display: block;  /*quero que esse paragrafo apareça quando passa mouse*/
+        }
+        div:hover {
+            background-color: yellow;  /*quero que essa div fica amarelo quando passa mouse em cima*/
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01
+        <p>sera que aparece</p>
+    </div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>
